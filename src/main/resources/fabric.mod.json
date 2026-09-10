@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "shiftbypass",
+	"version": "${version}",
+	"name": "ShiftBypass",
+	"description": "Lets you sneak (shift) no matter what you are doing - chatting, in your inventory, in a crafting table, etc. Shift presses are always routed to the game, honoring your vanilla sneak toggle/hold setting.",
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://fabricmc.net/"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.shiftbypass.client.ShiftBypassClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "shiftbypass.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
