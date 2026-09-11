@@ -41,4 +41,4 @@ The jar lands in `build/libs/shiftbypass-1.0.0.jar`.
 
 ## License
 
-MIT
+AGPL-3.0
